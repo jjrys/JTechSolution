@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    background: #343434;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: #272727;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    .logo {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(48, 48, 245);
+        font-size: 1.2em;
+
+        span {
+            color: rgb(1, 155, 1);
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        place-content: space-between;
+        padding-top: 4px;
+    }
+
+    .mobile-menu {
+        cursor: pointer;
+        margin-right: 2.5em;
+    }
+    
+}
+
+.ques {
+    text-align: center;
+    padding-bottom: 4em;
+    
+    a {
+        color: rgb(121, 187, 224);
+        text-decoration: none;
+    }
+}
+
+.container {
+    color: white;
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        padding-bottom: .1em;
+    }
+
+    h3 {
+        text-align: center;
+        padding-top: 4em;
+    }
+
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+
+.left-col {
+
+    .subhead {
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .1em;
+        font-size: 1.7em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        line-height: 1.2em;
+        margin-top: 2em;
+    }
+
+
+}
+
+.hero-cta {
+
+    text-align: center;
+
+
+    .now {
+        margin-top: 2em;
+        margin-bottom: 3em;
+        font-size: 1.4em;
+    }
+
+    .get {
+        text-decoration: none;
+        background: rgb(12, 50, 221);
+        color: white;
+        padding: .4em 1.6em;
+        font-size: 1.6em;
+        font-weight: bold;
+        border-radius: 10em;
+    }
+    .get:hover {
+        background: rgb(13, 55, 247);
+    }
+}
+
+.hero-img {
+
+    width: 100%;
+    margin-top: 3em;
+
+}
+
+.feature-section {
+    background: #474747;
+    border-radius: 2em;
+    box-shadow: 20px 20px 20px #2d2d2d,
+}
+
+ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns:  repeat(auto-fit, minmax(19rem, 1fr));
+
+    li {
+        font-size: 1.4em;
+        margin-bottom: .8em;
+        margin-left: 4em;
+        position: relative;
+
+        &:before {
+            content: '';
+            left: -2em;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-image: url('../images/bullet.svg');
+            background-size: contain;
+            margin-right: .5em;
+            margin-top: .4em;
+        }
+    }
+}
+
+.testimonials-section {
+
+    li {
+        background: #343434;
+        text-align: center;
+        padding: 2em 1em;
+        width: 80%;
+        margin: 0 auto 5em;
+        border-radius: 1.2em;
+        box-shadow: -20px -20px 20px rgba($color: #414141, $alpha: 0.6),
+        20px 20px 20px rgba($color: #222222, $alpha: 0.6);
+        
+        img {
+            width: 8em;
+            height: 8em;
+            border-radius: 8em;
+            border: 3px solid rgb(34, 97, 122);
+            margin-top: -6.3em;
+        }
+    
+        .school {
+            font-size: 1.3em;
+        }
+        
+        .major {
+            font-size: 1.3em;
+        }
+    }
+
+    ul {
+        margin-top: 4em;
+    }
+
+    .links {
+        text-align: center;
+        margin-top: 0;
+
+        img {
+            width: 3.7em;
+            height: 3.7em;
+            border-radius: 5em;
+            margin: 0 12px; 
+        }    
+
+        img:hover {   
+            opacity: 0.9;
+        }
+    }
+}
+
+nav.menu-btn {
+    display: block;
+    background-color: rgba($color: #455390, $alpha: 2.0);
+    backdrop-filter: blur(20px);
+    height: 40%;
+    border-bottom-left-radius: 10px;
+}
+
+nav {
+    position: fixed;
+    z-index: 999;
+    width: 40%;
+    right: 0;
+    top: 0;
+    background-color: #444444;
+    height: 100%;
+    padding: 1em;
+
+    ul.primary-nav {
+        margin-top: 3em;
+    }
+
+    li {
+
+        a {
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            padding: .5em;
+            font-size: 1.3em;
+            display: block;
+
+            &:hover {
+                
+                color: rgb(37, 190, 23);
+            }
+        }
+    }
+
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .3em;
+    cursor: pointer;
+}
+
+div {
+    text-align: center;
+
+    iframe {
+        width: 380px;
+        height: 500px;
+        border-radius: 13px;
+        margin-bottom: 50px;
+        box-shadow: 20px 20px 20px #2d2d2d;
+    }
+}
+
+.page2 {
+
+    padding-top: 100px;
+
+    div {
+        padding-bottom: 1em;
+    }
+    
+    h3 {
+        margin-left: 1em;
+        font-weight: lighter;
+        color: rgb(68, 197, 68);
+        text-align: left;
+        padding-bottom: 1px;
+
+    }
+
+    p {
+        text-align: left;
+        margin-left: 2em;
+        color: rgb(121, 187, 224);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu, .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+    
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+
+        ul {
+            display: flex;
+        }
+
+        a {
+            font-size: 1em;
+            padding: .1em 1em;
+        }
+
+        ul.primary-nav {
+            margin: 0;
+        }
+    }
+
+    .hero-img {
+
+        width: 40%;
+        margin-top: 3em;
+    
+    }
+
+    .navbar {
+        position: fixed;
+        width: 100%;
+        z-index: 9999;
+        
+        .secondary-nav {
+                margin-right: 2.5em;
+        }
+    }
+
+    .container .hero-cta{
+
+        .get{
+            width: 80%;
+        }
+    }
+
+    .testimonials-section {
+        ul {
+            margin: 0 110px;
+        }
+    }
+
+    .feature-section {
+        margin: 0 200px;
+    }
+    
+    .container {
+        iframe {
+            width: 60%
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .feature-section {
+        width: 50%;
+        margin: auto;
+    }
+
+    .testimonials-section {
+        
+        ul { 
+            display: flex;
+            gap:  4rem;
+            width: 70%;
+            margin: 0 auto;     
+        }
+
+        .moto {
+            padding-top: 40px;
+        }
+        
+    }
+
+    .container {
+        iframe {
+            max-width: 50%;
+        }
+    }
+}
